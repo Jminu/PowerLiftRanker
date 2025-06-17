@@ -105,7 +105,13 @@ class UploadViewController: UIViewController, PHPickerViewControllerDelegate {
                         if let error = error {
                             self.showAlert(message: "업로드 실패: \(error.localizedDescription)")
                         } else {
-                            self.showAlert(message: "업로드 성공! ✅")
+                            self.showAlert(message: "업로드 성공! ✅") {
+                                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                                let mainVC = storyboard.instantiateViewController(withIdentifier: "MainView")
+                                mainVC.modalPresentationStyle = .fullScreen
+                                self.present(mainVC, animated: true)
+                            }
+
                         }
                     }
                 }
@@ -119,9 +125,12 @@ class UploadViewController: UIViewController, PHPickerViewControllerDelegate {
         }
     
     
-    func showAlert(message: String) {
-            let alert = UIAlertController(title: "알림", message: message, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "확인", style: .default))
-            present(alert, animated: true)
-        }
+    func showAlert(message: String, completion: (() -> Void)? = nil) {
+        let alert = UIAlertController(title: "알림", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "확인", style: .default) { _ in
+            completion?()
+        })
+        present(alert, animated: true)
+    }
+
 }

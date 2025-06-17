@@ -16,24 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bb-Nh-9Fn">
-                                <rect key="frame" x="169" y="494" width="54" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="랭킹"/>
-                                <connections>
-                                    <action selector="RankingBtnTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dUN-pX-hvt"/>
-                                    <segue destination="6fh-oP-6bA" kind="show" id="QLc-Xk-SQT"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfT-pC-Qh7">
-                                <rect key="frame" x="155" y="366" width="83" height="35"/>
+                                <rect key="frame" x="16" y="184" width="361" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="자랑하기"/>
                                 <connections>
                                     <action selector="UploadBtnTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dK7-iB-aWH"/>
                                     <segue destination="UJX-IC-eUN" kind="show" id="Lqt-Mg-eTf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bb-Nh-9Fn">
+                                <rect key="frame" x="16" y="308" width="361" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="랭킹"/>
+                                <connections>
+                                    <action selector="RankingBtnTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dUN-pX-hvt"/>
+                                    <segue destination="6fh-oP-6bA" kind="show" id="QLc-Xk-SQT"/>
                                 </connections>
                             </button>
                         </subviews>

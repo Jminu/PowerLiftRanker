@@ -4,9 +4,11 @@ import FirebaseAuth
 class LoginViewController: UIViewController {
     @IBOutlet weak var idField: UITextField!
     @IBOutlet weak var pwField: UITextField!
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.image = UIImage(named: "loginImage")
     }
     
     // 로그인 버튼 터치 시

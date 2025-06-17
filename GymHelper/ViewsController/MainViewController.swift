@@ -18,4 +18,9 @@ class MainViewController: UIViewController {
     @IBAction func RankingBtnTouched(_ sender: UIButton) {
         
     }
+    
+    @IBAction func MyPageBtnTouched(_ sender: UIButton) {
+        
+    }
+    
 }

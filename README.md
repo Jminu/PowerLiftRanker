@@ -4,7 +4,7 @@
 
 ## 시연 영상
 
-https://youtu.be/ZQXDd9HElAY
+[https://youtu.be/ZQXDd9HElAY](https://www.youtube.com/watch?v=jIepmEcWAFE)
 
 ## 주요 기능
 

@@ -16,9 +16,6 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         
-        // Register custom cell
-        //let nib = UINib(nibName: "RankingCell", bundle: nil)
-        //tableView.register(nib, forCellReuseIdentifier: "RankingCell")
         tableView.rowHeight = 80
         
         fetchRanking(for: exerciseOptions[0]) // 초기 운동종류

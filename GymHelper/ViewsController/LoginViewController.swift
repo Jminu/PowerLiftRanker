@@ -9,6 +9,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = UIImage(named: "loginImage")
+        pwField.isSecureTextEntry = true  // 비밀번호 숨김 처리
     }
     
     // 로그인 버튼 터치 시
